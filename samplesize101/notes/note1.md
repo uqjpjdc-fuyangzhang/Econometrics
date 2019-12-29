@@ -15,11 +15,11 @@
   - [Q1](#q1)
     - [(1) Type I Errorの確率を誤りを求めよ](#1-type-i-error%E3%81%AE%E7%A2%BA%E7%8E%87%E3%82%92%E8%AA%A4%E3%82%8A%E3%82%92%E6%B1%82%E3%82%81%E3%82%88)
     - [(2) P = 0.6 のときのType II Errorの確率を誤りを求めよ](#2-p--06-%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%AEtype-ii-error%E3%81%AE%E7%A2%BA%E7%8E%87%E3%82%92%E8%AA%A4%E3%82%8A%E3%82%92%E6%B1%82%E3%82%81%E3%82%88)
-    - [(2) P = 0.8 のときのType II Errorの確率を誤りを求めよ](#2-p--08-%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%AEtype-ii-error%E3%81%AE%E7%A2%BA%E7%8E%87%E3%82%92%E8%AA%A4%E3%82%8A%E3%82%92%E6%B1%82%E3%82%81%E3%82%88)
+    - [(3) P = 0.8 のときのType II Errorの確率を誤りを求めよ](#2-p--08-%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%AEtype-ii-error%E3%81%AE%E7%A2%BA%E7%8E%87%E3%82%92%E8%AA%A4%E3%82%8A%E3%82%92%E6%B1%82%E3%82%81%E3%82%88)
   - [Q2](#q2)
     - [(1) Type I Errorの確率を誤りを求めよ](#1-type-i-error%E3%81%AE%E7%A2%BA%E7%8E%87%E3%82%92%E8%AA%A4%E3%82%8A%E3%82%92%E6%B1%82%E3%82%81%E3%82%88-1)
     - [(2) P = 0.6 のときのType II Errorの確率を誤りを求めよ](#2-p--06-%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%AEtype-ii-error%E3%81%AE%E7%A2%BA%E7%8E%87%E3%82%92%E8%AA%A4%E3%82%8A%E3%82%92%E6%B1%82%E3%82%81%E3%82%88-1)
-    - [(2) P = 0.8 のときのType II Errorの確率を誤りを求めよ](#2-p--08-%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%AEtype-ii-error%E3%81%AE%E7%A2%BA%E7%8E%87%E3%82%92%E8%AA%A4%E3%82%8A%E3%82%92%E6%B1%82%E3%82%81%E3%82%88-1)
+    - [(3) P = 0.8 のときのType II Errorの確率を誤りを求めよ](#2-p--08-%E3%81%AE%E3%81%A8%E3%81%8D%E3%81%AEtype-ii-error%E3%81%AE%E7%A2%BA%E7%8E%87%E3%82%92%E8%AA%A4%E3%82%8A%E3%82%92%E6%B1%82%E3%82%81%E3%82%88-1)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -95,12 +95,12 @@ $$
 # 2 : 練習問題
 ## Q1
 「５回投げて $x = 5$または $x = 0$であるときに$H_0$を棄却する」という$H_0$の棄却方式を採用する。
-### (1) Type I Errorの確率を誤りを求めよ
+#### (1) Type I Errorの確率を誤りを求めよ
 $$
 _5C_5\times 0.5^5 + _5C_0\times 0.5^5 = 0.0625
 $$
 
-### (2) P = 0.6 のときのType II Errorの確率を誤りを求めよ
+#### (2) P = 0.6 のときのType II Errorの確率を誤りを求めよ
 $$
 \begin{aligned}
 1 - (_5C_5\times 0.6^5 + _5C_0\times 0.4^5) & = 1 - (6**5 + 4 **5)/10**5\\
@@ -108,7 +108,7 @@ $$
 \end{aligned}
 $$
 
-### (2) P = 0.8 のときのType II Errorの確率を誤りを求めよ
+#### (3) P = 0.8 のときのType II Errorの確率を誤りを求めよ
 $$
 \begin{aligned}
 1 - (_5C_5\times 0.8^5 + _5C_0\times 0.2^5) & = 1 - (8**5 + 2 **5)/10**5\\
@@ -118,14 +118,14 @@ $$
 
 ## Q2
 「５回投げて$x \geq 4$または $x \leq 1$であるときに$H_0$を棄却する」という棄却方式を採用する
-### (1) Type I Errorの確率を誤りを求めよ
+#### (1) Type I Errorの確率を誤りを求めよ
 $$
-\begin{algned}
+\begin{aligned}
 _5C_5\times 0.5^5 + _5C_4\times 0.5^4(1-0.5) + _5C_1\times 0.5^1(1-0.5)^4 +_5C_0\times 0.5^5 = 0.3125 + 0.0625 = 0.375
 \end{aligned}
 $$
 
-### (2) P = 0.6 のときのType II Errorの確率を誤りを求めよ
+#### (2) P = 0.6 のときのType II Errorの確率を誤りを求めよ
 $$
 \begin{aligned}
 1 - (_5C_5\times 0.6^5 + _5C_4\times 0.6^4(1-0.6) + _5C_1\times 0.6^1(1-0.6)^4+ _5C_0\times 0.4^5) & = 1 - (6**5 + 4 **5)/10**5\\
@@ -133,7 +133,7 @@ $$
 \end{aligned}
 $$
 
-### (2) P = 0.8 のときのType II Errorの確率を誤りを求めよ
+#### (3) P = 0.8 のときのType II Errorの確率を誤りを求めよ
 $$
 \begin{aligned}
 1 - (_5C_5\times 0.8^5 + _5C_0\times 0.2^5) & = 1 - (8**5 + 2 **5)/10**5\\
